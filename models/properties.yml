@@ -1,0 +1,11 @@
+sources:
+  - name: "all_required_tables"
+    database: "DB_ECOMM"
+    schema: "SC_ECOMM"
+    tables:
+      - name: "Raw_users"
+      - name: "Raw_country"    
+models:
+  - name: "SRC_USERS"
+    config:
+      materialized: view
