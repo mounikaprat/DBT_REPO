@@ -4,8 +4,20 @@ sources:
     schema: "SC_ECOMM"
     tables:
       - name: "Raw_users"
-      - name: "Raw_country"    
+      - name: "Raw_country" 
+      - name: "Raw_sales"   
 models:
   - name: "SRC_USERS"
     config:
       materialized: view
+  - name: "stg_country"
+    config:
+      materialized: ephemeral
+      full_refresh: true
+  - name: "country"
+    config:
+      materialized: table
+      full_refresh: true
+  - name: "country_lookup"
+    config:
+      full_refresh: true    
