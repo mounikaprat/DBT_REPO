@@ -2,3 +2,12 @@ name: 'my_new_project'
 model-paths: ["models"]
 target-path: "target"
 seed-paths: ["seeds"]
+macro-paths: ["macros"]
+
+seeds:
+  my_new_project:
+    products:
+      +column_types:
+        Product: varchar(10)
+        ShipDate: Date
+        DeliveredDate: Date
