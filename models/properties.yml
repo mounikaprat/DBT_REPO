@@ -5,7 +5,8 @@ sources:
     tables:
       - name: "Raw_users"
       - name: "Raw_country" 
-      - name: "Raw_sales"   
+      - name: "Raw_sales"  
+      - name: "currency" 
 models:
   - name: "SRC_USERS"
     config:
